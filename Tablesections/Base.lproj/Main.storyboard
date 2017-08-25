@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13168.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Czy-uq-elo">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13147.4"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tablesections-->
+        <scene sceneID="UBi-DK-5mN">
+            <objects>
+                <viewController id="Czy-uq-elo" customClass="Tablesections" customModule="Tablesections" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Jq-t7-5I8"/>
+                        <viewControllerLayoutGuide type="bottom" id="6ZY-YQ-2L8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hY6-o2-why">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Egs-Iq-JWa">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Sections" rowHeight="105" id="Wi1-b2-wvW" customClass="Sections" customModule="Tablesections" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="105"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Wi1-b2-wvW" id="fmX-8l-qhg">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="105"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tf-Ag-1Mf">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="104.5"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="tapBtn:" destination="Czy-uq-elo" eventType="touchUpInside" id="EOY-hj-PfN"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="2tf-Ag-1Mf" secondAttribute="bottom" id="B9c-jd-i4N"/>
+                                                <constraint firstAttribute="trailing" secondItem="2tf-Ag-1Mf" secondAttribute="trailing" id="E2s-Ah-MlE"/>
+                                                <constraint firstItem="2tf-Ag-1Mf" firstAttribute="leading" secondItem="fmX-8l-qhg" secondAttribute="leading" id="WVh-CG-gp9"/>
+                                                <constraint firstItem="2tf-Ag-1Mf" firstAttribute="top" secondItem="fmX-8l-qhg" secondAttribute="top" id="vAt-3W-OCv"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="tapBtn" destination="2tf-Ag-1Mf" id="mE3-AO-9qb"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Egs-Iq-JWa" firstAttribute="leading" secondItem="hY6-o2-why" secondAttribute="leading" id="gHN-YR-Mkw"/>
+                            <constraint firstAttribute="trailing" secondItem="Egs-Iq-JWa" secondAttribute="trailing" id="ko6-TP-oan"/>
+                            <constraint firstItem="Egs-Iq-JWa" firstAttribute="top" secondItem="7Jq-t7-5I8" secondAttribute="bottom" id="vVc-u0-WOB"/>
+                            <constraint firstItem="6ZY-YQ-2L8" firstAttribute="top" secondItem="Egs-Iq-JWa" secondAttribute="bottom" id="xSh-2g-Fz6"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableview" destination="Egs-Iq-JWa" id="XoO-VU-yxT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cSj-d1-Gjb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-820" y="5.8470764617691158"/>
+        </scene>
+    </scenes>
+</document>
